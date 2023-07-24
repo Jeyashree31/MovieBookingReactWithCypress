@@ -1,0 +1,67 @@
+{
+  "name": "moviebookingapp-web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@cypress/instrument-cra": "^1.4.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.0",
+    "cors": "^2.8.5",
+    "cypress": "^12.17.2",
+    "istanbul-lib-coverage": "^3.2.0",
+    "nyc": "^14.1.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.12.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "peerDependencies": {
+    "cypress": "*"
+  },
+  "scripts": {
+    "start": "react-scripts -r @cypress/instrument-cra start",
+    "cy:run": "cypress run",
+    "build": "react-scripts build",
+    "test": "cypress run",
+    "eject": "react-scripts eject",
+    "e2e": "start-test 3000",
+    "report:coverage": "nyc report --reporter=html",
+    "coverage:verify": "npx nyc report --check-coverage true --lines 80"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "nyc": {
+    "report-dir": "coverage-e2e",
+    "all": true,
+    "include": "src/**/*.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.11",
+    "@cypress/code-coverage": "^3.11.0",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-istanbul": "^6.1.1",
+    "check-code-coverage": "1.10.0"
+  }
+}

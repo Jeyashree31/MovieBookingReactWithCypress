@@ -1,0 +1,68 @@
+.registration-container{
+    background-color: gainsboro;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label{
+    height: auto;
+}
+.registration-form{
+    width: 400px;
+    height:auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    padding-top:0px;
+    /* padding-bottom:0px; */
+}
+.registration-form h2{
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.registration-form label{
+    display: block;
+    margin-bottom: 2px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="password"],
+.registration-form input[type="email"]{
+    width: 100%;
+    padding: 5px;
+    border:1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.registration-form button{
+    width:100%;
+    padding: 10px;
+    background-color: darkslateblue;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    cursor: pointer;
+}
+.registration-form button:hover{
+    /* background-color: #B6D0E2; */
+    background-color: gainsboro;
+    color: black;
+}
+.button-groups{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.button-groups button{
+    flex-basis: 49%;
+}
+.error-message{
+    color:red;
+    font-size: 14px;
+    margin-top: 2px;
+}
